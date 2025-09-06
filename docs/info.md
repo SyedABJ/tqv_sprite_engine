@@ -51,7 +51,7 @@ It generates **1024×768 @ 60 Hz video output** with two independent 8×8 sprite
 3. Write the 64-bit bitmaps into the corresponding `spr*_bmp` registers in 16-bit chunks.  
 4. Enable streaming by setting `control_reg[0] = 1`.  
 5. Connect a VGA/XGA monitor and observe output.  
-6. (Optional) Enable interrupts by setting `control_reg[1] = 1`.  
+6. Enable interrupts by setting `control_reg[1] = 1`.  
    - IRQ is signaled on `user_interrupt` whenever VSYNC rises.  
    - Clear by writing `control_reg[2] = 1`.  
 
